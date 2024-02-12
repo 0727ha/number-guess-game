@@ -1,0 +1,104 @@
+@import url('https://webfontworld.github.io/daegu/DalseoHealing.css');
+
+body {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'DalseoHealing';
+	background-image: url(image/backui.PNG);
+}
+
+.container {
+	border: 5px solid lightskyblue;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(247, 243, 242, 0.7);
+	width: 640px;
+	height: 380px;
+}
+
+#playButton,
+#reset-button {
+	margin-top: 10px;
+	/* input 박스 아래에 위치하도록 여백을 추가합니다 */
+	padding: 10px 20px;
+	/* 버튼의 크기를 키웁니다 */
+	background-color: dodgerblue;
+	/* 블루 계열의 색상을 적용합니다 */
+	color: white;
+	/* 텍스트 색상을 밝은 색으로 설정합니다 */
+	border: none;
+	/* 테두리를 제거합니다 */
+	border-radius: 5px;
+	/* 모서리를 둥글게 만듭니다 */
+	cursor: pointer;
+	/* 마우스가 올라갔을 때 포인터 모양을 표시합니다 */
+	font-size: 16px;
+	/* 폰트 크기를 조정합니다 */
+	font-weight: bold;
+	/* 폰트를 굵게 설정합니다 */
+	transition: background-color 0.3s;
+	/* 배경색 변화에 대한 전환 효과를 추가합니다 */
+	margin-left: 15px
+}
+
+#playButton:hover,
+#reset-button:hover {
+	background-color: deepskyblue;
+	/* 마우스가 버튼 위에 있을 때 색상을 변경합니다 */
+}
+
+#result-area {
+	margin-top: 60px;
+	/* 원하는 간격만큼 위쪽 마진을 설정합니다 */
+	margin-bottom: 30px;
+}
+
+#chance-area {
+	margin-bottom: 30px;
+}
+
+#user-input {
+	width: 200px;
+	/* 원하는 너비로 설정합니다 */
+	height: 30px
+}
+
+.title {
+	margin-top: 60px;
+}
+
+#randomButton {
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: lightseagreen;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+
+}
+
+#randomButton:hover {
+	background-color: black;
+}
+
+img {
+	margin-top: 30px;
+	bottom: 0;
+	/* 아래쪽으로부터 거리를 설정합니다. */
+	left: 0;
+	/* 왼쪽으로부터 거리를 설정합니다. */
+	width: 100px;
+	/* 이미지의 너비를 설정합니다. */
+	height: auto;
+	/* 이미지의 높이를 자동으로 조정합니다. */
+}

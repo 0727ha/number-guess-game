@@ -15,13 +15,15 @@ let resultArea = document.getElementById("result-area");
 let resetButton = document.getElementById("reset-button");
 let chances = 5;
 let gameOver = false;
-let chanceArea = document.getElementById('chance-area');
+let chanceArea = document.getElementById("chance-area");
 let history = [];
+let randomButton = document.getElementById("randomButton");
 
 
-playButton.addEventListener("click", play)//click자리에 mouse등의 다양한 이벤트를 적용할 수 있음,play를 변수처럼 넘김
+playButton.addEventListener("click", play);//click자리에 mouse등의 다양한 이벤트를 적용할 수 있음,play를 변수처럼 넘김
 resetButton.addEventListener("click", reset);
 userInput.addEventListener("focus", function () { userInput.value = ""; });
+
 
 function pickRandomNum() {
 	computerNum = Math.floor(Math.random() * 100) + 1;
@@ -59,6 +61,7 @@ function play() {
 	}
 }
 
+
 function reset() {
 	//userinput창이 깨끗하게 정리되고
 	userInput.value = "";
@@ -68,3 +71,12 @@ function reset() {
 	resultArea.textContent = "결과값이 여기 나옵니다";
 }
 pickRandomNum();
+// input 상자의 기본값을 설정하는 함수
+function setInputPlaceholder() {
+	userInput.placeholder = '여기에 숫자를 입력하세요~';
+}
+
+// 페이지 로드 시 호출하여 기본값 설정
+setInputPlaceholder();
+
+
